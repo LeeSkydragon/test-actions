@@ -6,7 +6,6 @@
 const JuejinHelper = require("juejin-helper");
 
 const JUEJIN_COOKIE_KEY = process.env?.JUEJIN_COOKIE_KEY;
-const OR_JUEJIN_COOKIE_KEY = process.env?.OR_JUEJIN_COOKIE_KEY;
 // 海底掘金游戏
 async function runSeagold(juejin) {
   if (juejin?.seagold) {
@@ -126,5 +125,4 @@ async function run(key) {
 }
 
 run(JUEJIN_COOKIE_KEY);
-run(OR_JUEJIN_COOKIE_KEY);
 
